@@ -8,7 +8,7 @@ import {useRouter} from "next/navigation"
 import {signIn} from "next-auth/react"
 
 
-export default function forgetPassword() {
+export default function ForgetPassword() {
   const params=useSearchParams()
   const [authData,setAuthData]=useState({
     email:"",
