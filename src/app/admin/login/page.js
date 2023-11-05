@@ -21,8 +21,8 @@ export default function adminSignIn(){
     console.log(authData)
      setLoading(true)
     try {
-      axios.defaults.baseURL="http://localhost:3000"
-      const res=await axios.post("api/auth/admin/login",authData)
+     // axios.defaults.baseURL="http://localhost:3000"
+      const res=await axios.post("../api/auth/admin/login",authData)
       const response=res.data
       console.log(response)
       setLoading(false)
